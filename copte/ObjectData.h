@@ -12,7 +12,7 @@ namespace cop {
 
 struct ObjectData {
 
-    typedef std::string_view                         name_t;
+    typedef std::string                              name_t;
     typedef sf::Sprite                               image_t;
     typedef sf::IntRect                              frame_t;
     typedef sf::Vector2f                             hitboxVector_t;

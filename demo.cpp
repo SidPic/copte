@@ -21,6 +21,12 @@ int main() {
     if (!cfg.loadFromFile( "config.cfg" )) {
         panic( "Couldn't read the config file: \"%s\"", "config.h" );
     }
+    ObjectsMap omap;
+    if (!omap.loadFromDirectory(cfg, cfg.objPath)) {
+        panic( "Coldn't load objects from the directory: \"%s\"", cfg.objPath );
+    }
+
+    std::cout << omap["atlas"].name << std::endl;
 
     return 0;
 }
