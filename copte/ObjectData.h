@@ -12,11 +12,12 @@ namespace cop {
 
 struct ObjectData {
 
-    typedef std::string                              name_t;
-    typedef sf::Sprite                               image_t;
-    typedef sf::IntRect                              frame_t;
-    typedef sf::Vector2f                             hitboxVector_t;
-    typedef std::map< name_t, std::vector<frame_t> > animationSet_t;
+    typedef std::string                     name_t;
+    typedef sf::Sprite                      image_t;
+    typedef sf::IntRect                     frame_t;
+    typedef sf::Vector2f                    hitboxVector_t;
+    typedef std::vector<frame_t>            animation_t;
+    typedef std::map< name_t, animation_t > animationSet_t;
 
     name_t         name;
     image_t        image;

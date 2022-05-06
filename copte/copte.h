@@ -2,13 +2,14 @@
 #define COPTE_COPTE_H
 
 /*
- *	Cpp Object Pixel Tile Engine
+ *  C++ Object Pixel Tile Engine
  *
- *	Uses:
- *		SFML
- *		jsoncpp
+ *  Uses:
+ *      SFML
+ *      jsoncpp
 */
 
+#include "Timer.h"
 #include "Object.h"
 #include "Config.h"
 #include "Drawer.h"
